@@ -41,6 +41,7 @@ p{
 
 .navbar{
     min-height: 100px;
+    max-width: 80%;
     margin-left: 40%;
     display: flex;
     justify-content: space-between;
@@ -286,7 +287,7 @@ img {
 
 /* Project section styling */
 .project-write-up{
-    height: 450px;
+    height: 45%;
     flex:40%;
     position: sticky;
     background: #354461ab;
@@ -307,9 +308,10 @@ img {
     height: 600px;
     background-color: rgba(151, 151, 236, 0.616);
     border-radius: 1rem;
-    padding: 2px 4px;
+    padding: 2px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    line-height: 1.5rem;
+
 
 }
 
@@ -325,6 +327,8 @@ img {
 
 .container3{
     display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
     margin: 1rem 1rem;
     gap: 2rem;
     background-color: rgba(212, 219, 233, 0.4);
@@ -426,6 +430,67 @@ footer p strong:hover{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .container{
+        color: rgb(222, 247, 238);
+        box-shadow: 3px 3px 2px 1px 
+                  rgba(239, 239, 245, 0.719),
+                  inset 0 1em 3em rgb(250, 253, 253, 0.1);
+        margin-left: 15px;
+        margin-right: 15px;
+        padding:10px;
+        display: grid;
+        justify-content: space-between;
+        border-bottom-style: dashed;
+    }
+    #intro{
+        border-right: none;
+        border-bottom: #9dbaf3;
+        border-bottom-style: inset;
+        flex: 65%;
+        padding: 20px 50px ;
+    
+    }
+
+    .fa-contact button{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        padding:1px;
+    }
+    .fa-envelope:hover,
+.fa-linkedin:hover,
+.fa-square-github:hover{
+    font-size: 2rem;
+    color: rgb(61, 60, 58);
+    background-color: #bbcbeb;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+    .fa-envelope,
+.fa-square-github,
+.fa-linkedin{
+    font-size: 1.8rem;
+    color:rgb(252, 252, 252);
+}
+
+.fa-square-git{
+    font-size: 20px;
+}
+.skill button{
+    width:auto;
+    height: auto;
+    margin-bottom:1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(212, 219, 233, 0.4);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 2px 1px 
+              rgba(163, 124, 236, 0.719),
+              inset 0 1em 3em rgba(29, 88, 250, 0.808);
+}
+
     .nav-menu{
         position: fixed;
         right: -100%;
@@ -433,14 +498,14 @@ footer p strong:hover{
         gap: 0;
         flex-direction: column;
         background-color: rgb(67, 83, 83);
-        width: 40%;
+        width: 50%;
         text-align: center;
         transition: 0.3s;
         z-index: 1;
     }
 
     #about-pics{
-        margin-top: 100px;
+        margin-top: 5px;
         height: 55rem;
         width:100%;
         padding:10px;
@@ -460,20 +525,17 @@ footer p strong:hover{
     }
 
     .container2{
-        background-color: rgba(212, 219, 233, 0.4);
     color: rgb(222, 247, 238);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
               inset 0 1em 3em rgb(250, 253, 253, 0.1);
     margin-left: 15px;
     margin-right: 15px;
-    padding:20px;
+    padding:15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-bottom-style: dashed;
-    transition: all 1s ease-in-out 0.1s;
-    
     }
 
     img {
@@ -485,8 +547,9 @@ footer p strong:hover{
 
       .container3{
         display: flex;
+        flex-direction: column;
         margin: 1rem 1rem;
-        gap: 2rem;
+        gap: 1rem;
         background-color: rgba(212, 219, 233, 0.4);
         color: rgb(222, 247, 238);
         box-shadow: 3px 3px 2px 1px 
@@ -497,91 +560,64 @@ footer p strong:hover{
     }
 
     .project-write-up{
-        height: 350px;
-        flex:40%;
-        position: sticky;
+        height: auto;
+        position: static;
         background: #354461ab;
         border-radius: 1rem;
-        margin: 2px, 0;
-        top: 60px;
-        padding: 0 1rem;
+        margin: 0;
+        top: 10px;
+        padding:1rem;
 
     }
 
     .project-content > div{
-        height: 400px;
+        height: auto;
         background-color: rgba(151, 151, 236, 0.616);
         border-radius: 1rem;
-        padding: 2px 4px;
+        padding: 2px 10px;
         font-size: 10px;
-    
+    }
+    .project-content h3 em:hover{
+        color: rgb(7, 245, 102);
+        text-decoration: underline;
+        font-size: 0.9rem;
     }
 
     .project-write-up h1{
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        font-weight: 2rem;
-        font-size: 2.5rem;
+        font-weight: 1rem;
+        font-size: 2rem;
         text-shadow: 1px 1px 2px rgb(59, 73, 80), 0 0 1em blue, 0 0 0.2em blue;
     }
    
     .project-write-up p{
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 1.3rem;
         text-shadow: rgb(0, 195, 255) 1px 0 4px;
     }
 
-    footer h1,
-    footer p,
-    footer h3{
-        font-size: 0.8rem;
+
+    h1{
+        font-size: 1.6rem;
     }
 
-    p, h1{
+    p{
         font-size: 20px
-    }
-
-    button{
-        height: 10px;
-        width: 10px;
-    }
-      
-}
-
-
-@media (max-width: 600px) {
-    
-    .nav-item{
-        margin: 20px 0;
-    }
-
-    .nav-menu.active{
-        right: 0;
-        padding-right: 50px;
-    }
-
+    }    
     .hidden{
         transition: none;
     }
 
-    .container3{
-        display: flex;
-        margin: 0.2rem 0.2rem;
-
-        gap: 0.5rem;
+    footer{
+        background-color: black;
+        color:aliceblue;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 1rem;
     }
 
-    .project-write-up{
-        height: 350px;
-        align-items: center;
-    }
-
-    .project-content > div{
-        height: 350px;
-        background-color: rgba(151, 151, 236, 0.616);
-        border-radius: 1rem;
-        padding: 2px 4px;
-        font-size: 10px;
-    
+    footer p{
+        font-size: 0.9rem;
     }
 }
