@@ -1,6 +1,7 @@
+"use strict";
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
 
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");
@@ -8,17 +9,12 @@ hamburger.addEventListener("click", () =>{
 })
 
 // function to remove menu dropdown 
-
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-
 }))
 
-
-
 // function to animate the project section
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -27,7 +23,6 @@ const observer = new IntersectionObserver((entries) => {
         } else {
             entry.target.classList.remove('show');
         }
-
     });
 });
 
