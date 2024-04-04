@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
 }
@@ -14,7 +13,6 @@ main{
     margin: auto;
 }
 
-
 :after, :before {
     box-sizing: border-box;
     border: 0 solid #e5e7eb;
@@ -25,7 +23,6 @@ h1{
     text-align: center;
     font-weight: 5rem;
     font-size: 3rem;
-    text-shadow: 1px 1px 2px rgb(59, 73, 80), 0 0 1em blue, 0 0 0.2em blue;
 }
 
 h4{
@@ -36,7 +33,6 @@ h4{
 p{
     font-size: 1.8rem;
     line-height: 2.5rem;
-    text-shadow: rgb(0, 195, 255) 1px 0 10px;
 }
 
 .navbar{
@@ -77,23 +73,23 @@ p{
  .nav-link:hover,
  .nav-link:focus{
      color:rgb(147, 170, 248);
-     transition-delay: 2s;
-     transition: transform 0.4s ease-out 2s;
+     transition-delay: 0.3s;
  }
  
+
  .nav-link::after{
-     content: '';
-     position: absolute;
-     width: 100%;
-     transform: scaleX(0);
-     height: 2px;
-     top: 20px;
-     left: 0;
-     opacity: 0;
-     background: rgb(147, 170, 248);
-     transform-origin: bottom left;
-     transition: transform 0.4s ease-out;
- }
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    background: rgb(147, 170, 248);
+    transform-origin: bottom left;
+    transition: transform 0.4s ease-out;
+}
  
  .nav-link:hover::after,
  .nav-link:focus::after{
@@ -103,29 +99,28 @@ p{
  }
 
  #logo{
-    color:rgb(0, 0, 255);
+    color:rgb(10, 220, 248);
     position: fixed;
     padding: 10px;
     margin-top: 15px;
     margin-left: 50px;
-    font-size: 40px;
+    font-size: 36px;
     border-radius: 40%;
     border-style:groove ;
     top: 2px;
-    background: #bdc6d8;
-    text-shadow: rgb(72, 106, 117) 1px 0 10px;
+    background: #778091;
+    text-shadow: rgb(48, 77, 87) 1px 0 10px;
     transition: all 0.2s ease-in-out 0.3s;
     z-index: 2;
 }
 
 #logo:hover{
-    font-size: 45px;
+    font-size: 40px;
 }
 
 /* Home page styling */
-
 .container{
-    background-color: rgba(212, 219, 233, 0.4);
+    background-color: rgba(105, 115, 134, 0.4);
     color: rgb(222, 247, 238);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
@@ -138,7 +133,6 @@ p{
     justify-content: space-between;
     border-bottom-style: dashed;
     transition: all 1s ease-in-out 0.1s;
-    
 }
 
 .container:hover,
@@ -153,7 +147,6 @@ p{
     border-right-style: inset;
     flex: 65%;
     padding: 20px 50px ;
-
 }
 
 #intro2{
@@ -163,7 +156,6 @@ p{
     gap: 1rem;
     flex:35%;
     padding:40px;
-
 }
 
 .fa-contact{
@@ -186,7 +178,6 @@ p{
               rgba(131, 163, 204, 0.719),
               inset 0 1em 2em rgba(15, 4, 165, 0.808);
     z-index: -1;
-    
 }
 
 .fa-envelope,
@@ -207,7 +198,6 @@ p{
     background-color: #bbcbeb;
     border-radius: 50%;
     padding: 6px;
-
 }
 
 .fa-square-git{
@@ -229,7 +219,7 @@ p{
 
 /* about page */
 .container2{
-    background-color: rgba(212, 219, 233, 0.4);
+    background-color: rgba(105, 115, 134, 0.4);
     color: rgb(222, 247, 238);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
@@ -241,13 +231,11 @@ p{
     justify-content: space-between;
     border-bottom-style: dashed;
     transition: all 1s ease-in-out 0.1s;
-    
 }
 
 #content{
     flex:70%;
     padding:20px 20px;
-
 }
 
 #about-pics{
@@ -258,7 +246,6 @@ p{
     padding:10px;
     box-shadow: 5px 0px 10px rgba(222, 226, 241, 0.363),
         -5px 0px 10px rgba(221, 225, 238, 0.521);
-    
 }
 
 img {
@@ -296,12 +283,10 @@ img {
     top: 60px;
     font-size: 20px;
     padding: 0 1rem;
-
 }
 
 .project-content{
     flex: 60%;
-
 }
 
 .project-content > div{
@@ -311,8 +296,6 @@ img {
     padding: 2px 10px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
-
-
 }
 
 .project-content > div + div{
@@ -324,22 +307,19 @@ img {
     text-decoration: underline;
     font-size: 1.5rem;
 }
-
 .container3{
     display: flex;
     margin-left: 15px;
     margin-right: 15px;
     margin: 1rem 1rem;
     gap: 2rem;
-    background-color: rgba(212, 219, 233, 0.4);
+    background-color: rgba(105, 115, 134, 0.4);
     color: rgb(222, 247, 238);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
               inset 0 1em 3em rgb(250, 253, 253, 0.1);
     transition: all 1s ease-in-out 0.1s;
     border-bottom-style: dashed;
-
-
 }
 
 .container3::before, .container3::after{
@@ -357,7 +337,6 @@ img {
     display: flex;
     justify-content: space-between;
 }
-
 
 .avatar:nth-child(2){
     transition-delay: 200ms;
@@ -448,7 +427,6 @@ footer p strong:hover{
         border-bottom-style: inset;
         flex: 65%;
         padding: 20px 50px ;
-    
     }
 
     .fa-contact button{
@@ -458,38 +436,38 @@ footer p strong:hover{
         padding:1px;
     }
     .fa-envelope:hover,
-.fa-linkedin:hover,
-.fa-square-github:hover{
-    font-size: 2rem;
-    color: rgb(61, 60, 58);
-    background-color: #bbcbeb;
-    border-radius: 50%;
-    padding: 3px;
-}
+    .fa-linkedin:hover,
+    .fa-square-github:hover{
+        font-size: 2rem;
+        color: rgb(61, 60, 58);
+        background-color: #bbcbeb;
+        border-radius: 50%;
+        padding: 3px;
+    }
 
     .fa-envelope,
-.fa-square-github,
-.fa-linkedin{
-    font-size: 1.8rem;
-    color:rgb(252, 252, 252);
-}
+    .fa-square-github,
+    .fa-linkedin{
+        font-size: 1.8rem;
+        color:rgb(252, 252, 252);
+    }
 
-.fa-square-git{
-    font-size: 20px;
-}
-.skill button{
-    width:auto;
-    height: auto;
-    margin-bottom:1rem;
-    margin-right: 1rem;
-    font-size: 1rem;
-    padding: 0.5rem;
-    background-color: rgba(212, 219, 233, 0.4);
-    color: rgb(255, 255, 255);
-    box-shadow: 3px 3px 2px 1px 
-              rgba(163, 124, 236, 0.719),
-              inset 0 1em 3em rgba(29, 88, 250, 0.808);
-}
+    .fa-square-git{
+        font-size: 20px;
+    }
+    .skill button{
+        width:auto;
+        height: auto;
+        margin-bottom:1rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        background-color: rgba(212, 219, 233, 0.4);
+        color: rgb(255, 255, 255);
+        box-shadow: 3px 3px 2px 1px 
+                rgba(134, 109, 182, 0.719),
+                inset 0 1em 3em rgba(29, 88, 250, 0.808);
+    }
 
     .nav-menu{
         position: fixed;
@@ -497,11 +475,31 @@ footer p strong:hover{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: rgb(67, 83, 83);
+        background-color: rgb(46, 53, 53);
         width: 50%;
         text-align: center;
         transition: 0.3s;
         z-index: 1;
+    }
+
+    #logo{
+        color:rgb(10, 220, 248);
+        position: fixed;
+        padding: 6px;
+        margin-top: 25px;
+        margin-left: 50px;
+        font-size: 25px;
+        border-radius: 40%;
+        border-style:groove ;
+        top: 2px;
+        background: #778091;
+        text-shadow: rgb(48, 77, 87) 1px 0 10px;
+        transition: all 0.2s ease-in-out 0.3s;
+        z-index: 2;
+    }
+    
+    #logo:hover{
+        font-size: 28px;
     }
 
     #about-pics{
@@ -510,8 +508,7 @@ footer p strong:hover{
         width:100%;
         padding:10px;
         box-shadow: 5px 0px 10px rgba(222, 226, 241, 0.363),
-            -5px 0px 10px rgba(221, 225, 238, 0.521);
-        
+            -5px 0px 10px rgba(221, 225, 238, 0.39);
     }
     
     
@@ -525,17 +522,17 @@ footer p strong:hover{
     }
 
     .container2{
-    color: rgb(222, 247, 238);
-    box-shadow: 3px 3px 2px 1px 
-              rgba(239, 239, 245, 0.719),
-              inset 0 1em 3em rgb(250, 253, 253, 0.1);
-    margin-left: 15px;
-    margin-right: 15px;
-    padding:15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-bottom-style: dashed;
+        color: rgb(222, 247, 238);
+        box-shadow: 3px 3px 2px 1px 
+                rgba(239, 239, 245, 0.719),
+                inset 0 1em 3em rgb(250, 253, 253, 0.1);
+        margin-left: 15px;
+        margin-right: 15px;
+        padding:15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom-style: dashed;
     }
 
     img {
@@ -550,7 +547,7 @@ footer p strong:hover{
         flex-direction: column;
         margin: 1rem 1rem;
         gap: 1rem;
-        background-color: rgba(212, 219, 233, 0.4);
+        background-color: rgba(105, 115, 134, 0.4);
         color: rgb(222, 247, 238);
         box-shadow: 3px 3px 2px 1px 
                   rgba(239, 239, 245, 0.719),
@@ -594,7 +591,6 @@ footer p strong:hover{
     .project-write-up p{
         font-size: 1rem;
         line-height: 1.3rem;
-        text-shadow: rgb(0, 195, 255) 1px 0 4px;
     }
 
 
@@ -610,7 +606,7 @@ footer p strong:hover{
     }
 
     footer{
-        background-color: black;
+        background-color: rgb(29, 28, 28);
         color:aliceblue;
         text-align: center;
         margin-bottom: 2rem;
