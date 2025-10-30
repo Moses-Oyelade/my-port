@@ -193,11 +193,9 @@ p{
 .fa-envelope:hover,
 .fa-linkedin:hover,
 .fa-square-github:hover{
-    font-size: 51px;
     color: rgb(61, 60, 58);
     background-color: #bbcbeb;
-    border-radius: 50%;
-    padding: 6px;
+    padding: 2px;
 }
 
 .fa-square-git{
@@ -256,7 +254,7 @@ img {
   }
 
   /* responsive display and media query */
-  .hamburger{
+.hamburger{
     display: none;
     cursor:pointer;
     margin-left: 70%;
@@ -275,26 +273,46 @@ img {
 /* Project section styling */
 .project-write-up{
     height: 45%;
-    flex:40%;
+    flex:60%;
     position: sticky;
     background: #354461ab;
     border-radius: 1rem;
     margin: 2px, 0;
     top: 60px;
-    font-size: 20px;
+    font-size: larger;
     padding: 0 1rem;
+}
+.project-write-up h2{
+    margin-left: 11rem;
+}
+.project h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.project h3:hover {
+    /* color:rgb(26, 26, 26); */
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: larger;
+}
+.project p {
+    margin: 0.5rem 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 .project-content{
-    flex: 60%;
+    flex: 40%;
 }
 
 .project-content > div{
-    height: 600px;
+    /* height: 500px; */
+    height:36rem;
     background-color: rgba(151, 151, 236, 0.616);
     border-radius: 1rem;
-    padding: 2px 10px;
+    padding: 0.5rem 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
     line-height: 1.5rem;
 }
 
@@ -348,12 +366,12 @@ img {
 
 .avatar{
     background-color: #bbcbeb;
-    margin: 0 1rem 0 1em;
+    margin: 0 1rem 0 1rem;
     border-radius: 5px;
     box-shadow: .25rem .25rem .5rem hsla(167, 39%, 95%, 0.5);
 }
 
-.avatar:hover,
+/* .avatar:hover, */
 .avatar:focus{
     scale: 1.3;
     z-index: 2;
@@ -361,9 +379,8 @@ img {
 
 .avatar img{
     display:inline-block ;
-    width: 230px;
+    width: 18rem;
     height: 100%;
-    margin-bottom: 1rem;
     border: 5px solid rgb(0, 195, 255) ;
     box-shadow: .25rem .25rem .5rem hsla(167, 39%, 95%, 0.5);
 }
@@ -434,15 +451,6 @@ footer p strong:hover{
         height: 2rem;
         margin-right: 1rem;
         padding:1px;
-    }
-    .fa-envelope:hover,
-    .fa-linkedin:hover,
-    .fa-square-github:hover{
-        font-size: 2rem;
-        color: rgb(61, 60, 58);
-        background-color: #bbcbeb;
-        border-radius: 50%;
-        padding: 3px;
     }
 
     .fa-envelope,
@@ -565,6 +573,15 @@ footer p strong:hover{
         top: 10px;
         padding:1rem;
 
+    }
+
+    .project h3 {
+        margin-bottom: 0.4rem;
+        font-weight: 600;
+    }
+    .project p {
+        margin: 0.3rem 0;
+        line-height: 1rem;
     }
 
     .project-content > div{
