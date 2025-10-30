@@ -280,7 +280,7 @@ img {
     margin: 2px, 0;
     top: 60px;
     font-size: larger;
-    padding: 0 1rem;
+    padding: 0 1rem 2rem;
 }
 .project-write-up h2{
     margin-left: 11rem;
@@ -346,8 +346,12 @@ img {
     clear: both;
 }
 
-.content-hid{
-    padding-top: 2rem;
+.content-hid {
+    padding: 2rem 2rem 1rem 2rem;
+    /* text-align: center; */
+}
+.content-hid p{
+    /* padding-top: 2rem; */
     text-align: center;
 }
 
