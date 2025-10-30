@@ -31,8 +31,9 @@ h4{
     text-align: justify;
 }
 p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2.5rem;
+    text-align: justify;
 }
 
 .navbar{
@@ -222,9 +223,9 @@ p{
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
               inset 0 1em 3em rgb(250, 253, 253, 0.1);
-    margin-left: 15px;
-    margin-right: 15px;
-    padding:20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding:0.5rem;
     display: flex;
     justify-content: space-between;
     border-bottom-style: dashed;
@@ -408,7 +409,11 @@ footer{
     text-align: center;
     margin-bottom: 3rem;
 }
-
+footer p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
 footer p strong:hover{
     color: aquamarine;
     text-decoration: underline;
