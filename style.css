@@ -234,12 +234,12 @@ p{
 
 #content{
     flex:70%;
-    padding:20px 20px;
+    padding:2rem;
 }
 
 #about-pics{
     margin-top: 100px;
-    height: 55rem;
+    height: 58rem;
     width:auto;
     flex:30%;
     padding:10px;
