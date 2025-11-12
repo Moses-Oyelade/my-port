@@ -291,7 +291,10 @@ p{
 
 #content{
     flex:70%;
-    padding:2rem;
+    padding:2rem;   
+}
+#content h2{
+    font-size: 2rem;
 }
 
 #about-pics{
@@ -315,7 +318,8 @@ img {
 .hamburger{
     display: none;
     cursor:pointer;
-    margin-left: 50%;
+    margin-left: 40%;
+    margin-left: 5%;
 }
 
 .bar{
@@ -485,6 +489,7 @@ footer p strong:hover{
 @media (max-width: 768px) {
     .hamburger{
         display: block;
+        margin-right: 5%;
         
     }
     .hamburger.active .bar:nth-child(2){
@@ -515,7 +520,7 @@ footer p strong:hover{
         border-bottom: #9dbaf3;
         border-bottom-style: inset;
         flex: 65%;
-        padding: 20px 50px ;
+        padding: 10px 25px ;
     }
 
     .fa-contact button{
@@ -568,7 +573,7 @@ footer p strong:hover{
         position: fixed;
         padding: 6px;
         margin-top: 25px;
-        margin-left: 50px;
+        margin-left: 30px;
         font-size: 25px;
         border-radius: 40%;
         border-style:groove ;
@@ -624,11 +629,18 @@ footer p strong:hover{
                 inset 0 1em 3em rgb(250, 253, 253, 0.1);
         margin-left: 15px;
         margin-right: 15px;
-        padding:15px;
+        padding:10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border-bottom-style: dashed;
+    }
+    
+    #content {
+        padding: 0.5rem 1rem;
+    }
+    #content h2{
+        font-size:1.5rem;
     }
 
     img {
@@ -715,7 +727,7 @@ footer p strong:hover{
         color: var(--white);
         text-align: center;
         margin-bottom: 2rem;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
     }
 
     footer p{
