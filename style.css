@@ -2,8 +2,49 @@
     box-sizing: border-box;
 }
 
+:root {
+  /* Dark mode overrides */
+    --black: #000000;
+    --white: #ffffff;
+    --bg-color: #0f172a;
+    --text-color: #f1f5f9;
+    --card-bg: #354461ab;
+    --accent-color: #60a5fa;
+    --bg-image: url("avatar/Back21.jpg");
+    --txt-shd: rgb(0, 195, 255) 1px 0 10px;
+    --nav-link: rgb(140, 159, 220);
+    /* --nav-after: blueviolet; */
+    --a-color: white;
+    --container-bg: rgba(105, 115, 134, 0.4);
+    --cont-hov: rgba(14, 14, 15, 0.8);
+    --cont2-color: rgb(222, 247, 238);
+    --about-box-sh: rgba(222, 226, 241, 0.363);
+    --project-cont: rgba(151, 151, 236, 0.616);
+
+}
+
+body.dark-mode {
+    /* Light mode colors */
+  --white: #000000;
+  --black: #ffffff;
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #dbdbf2;
+  --accent-color: #2563eb;
+  --bg-image: url("");
+  --txt-shd: rgb(81, 111, 143) 1px 0 10px;
+  --nav-link: rgb(5, 5, 5);
+  /* --nav-after: */
+  --a-color: rgb(6, 15, 195);
+  --container-bg: rgba(241, 242, 244, 0.8);
+  --cont-hov: rgba(227, 227, 246, 0.9);
+  --cont2-color: rgb(85, 86, 88);
+  --about-box-sh: rgba(37, 47, 85, 0.637);
+  --project-cont: rgba(248, 249, 229, 0.616);
+}
+
 body{
-    background-image: url("avatar/Back21.jpg");
+    background-image: var(--bg-image);
     background-size: cover;
     margin: 0;
     height:auto
@@ -27,7 +68,7 @@ h1{
 
 h4{
     font-family: sans-serif;
-    text-shadow: rgb(0, 195, 255) 1px 0 10px;
+    text-shadow: var(--txt-shd);
     text-align: justify;
 }
 p{
@@ -35,6 +76,22 @@ p{
     line-height: 2.5rem;
     text-align: justify;
 }
+
+#theme-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
 
 .navbar{
     min-height: 100px;
@@ -58,7 +115,7 @@ p{
  }
  
  a{
-     color: white;
+     color: var(--a-color);
      text-decoration: none;
  }
  
@@ -73,7 +130,7 @@ p{
  
  .nav-link:hover,
  .nav-link:focus{
-     color:rgb(147, 170, 248);
+     color: var(--nav-link);
      transition-delay: 0.3s;
  }
  
@@ -87,7 +144,7 @@ p{
     top: 20px;
     left: 0;
     opacity: 0;
-    background: rgb(147, 170, 248);
+    background: var(--nav-link);
     transform-origin: bottom left;
     transition: transform 0.4s ease-out;
 }
@@ -100,7 +157,7 @@ p{
  }
 
  #logo{
-    color:rgb(10, 220, 248);
+    color:var(--white);
     position: fixed;
     padding: 10px;
     margin-top: 15px;
@@ -109,7 +166,7 @@ p{
     border-radius: 40%;
     border-style:groove ;
     top: 2px;
-    background: #778091;
+    background: var(--bg-color);
     text-shadow: rgb(48, 77, 87) 1px 0 10px;
     transition: all 0.2s ease-in-out 0.3s;
     z-index: 2;
@@ -121,8 +178,8 @@ p{
 
 /* Home page styling */
 .container{
-    background-color: rgba(105, 115, 134, 0.4);
-    color: rgb(222, 247, 238);
+    background-color: var(--container-bg);
+    color: var(--cont2-color);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
               inset 0 1em 3em rgb(250, 253, 253, 0.1);
@@ -139,8 +196,8 @@ p{
 .container:hover,
 .container2:hover,
 .container3:hover{
-    color:rgb(241, 243, 245);
-    background-color: rgba(14, 14, 15, 0.8);
+    color:var(--white);
+    background-color: var(--cont-hov);
 }
 
 #intro{
@@ -174,7 +231,7 @@ p{
     font-size: 1rem;
     padding: 0.5rem;
     background-color: rgba(212, 219, 233, 0.4);
-    color: rgb(255, 255, 255);
+    color: var(--white);
     box-shadow: 2px 2px 2px 1px 
               rgba(131, 163, 204, 0.719),
               inset 0 1em 2em rgba(15, 4, 165, 0.808);
@@ -187,7 +244,7 @@ p{
 .fa-square-github,
 .fa-linkedin{
     font-size: 50px;
-    color:rgb(252, 252, 252);
+    color: var(--white);
     z-index: 1;
 }
 
@@ -218,8 +275,8 @@ p{
 
 /* about page */
 .container2{
-    background-color: rgba(105, 115, 134, 0.4);
-    color: rgb(222, 247, 238);
+    background-color: var(--container-bg);
+    color: var(--cont2-color);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
               inset 0 1em 3em rgb(250, 253, 253, 0.1);
@@ -268,7 +325,7 @@ img {
     margin:4px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: var(--white);
 }
 
 /* Project section styling */
@@ -276,7 +333,7 @@ img {
     height: 45%;
     flex:60%;
     position: sticky;
-    background: #354461ab;
+    background: var(--card-bg);
     border-radius: 1rem;
     margin: 2px, 0;
     top: 60px;
@@ -291,7 +348,7 @@ img {
     font-weight: 600;
 }
 .project h3:hover {
-    /* color:rgb(26, 26, 26); */
+    color:rgb(26, 26, 26);
     text-decoration: underline;
     font-weight: 700;
     font-size: larger;
@@ -309,7 +366,7 @@ img {
 .project-content > div{
     /* height: 500px; */
     height:36rem;
-    background-color: rgba(151, 151, 236, 0.616);
+    background-color: var(--project-cont);
     border-radius: 1rem;
     padding: 0.5rem 2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -322,7 +379,7 @@ img {
 }
 
 .project-content h3 em:hover{
-    color: rgb(7, 245, 102);
+    color: var(--a-color);
     text-decoration: underline;
     font-size: 1.5rem;
 }
@@ -332,8 +389,8 @@ img {
     margin-right: 15px;
     margin: 1rem 1rem;
     gap: 2rem;
-    background-color: rgba(105, 115, 134, 0.4);
-    color: rgb(222, 247, 238);
+    background-color: var(--container-bg);
+    color: var(--cont2-color);
     box-shadow: 3px 3px 2px 1px 
               rgba(239, 239, 245, 0.719),
               inset 0 1em 3em rgb(250, 253, 253, 0.1);
@@ -404,8 +461,8 @@ img {
 }
 
 footer{
-    background-color: black;
-    color:aliceblue;
+    background-color: var(--white);
+    color: var(--black);
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -414,8 +471,12 @@ footer p{
     line-height: 2.5rem;
     text-align: center;
 }
+
+footer p strong{
+    color: rgb(21, 39, 236);
+}
 footer p strong:hover{
-    color: aquamarine;
+    color: rgb(55, 166, 226);
     text-decoration: underline;
 }
 
@@ -436,7 +497,8 @@ footer p strong:hover{
     }
 
     .container{
-        color: rgb(222, 247, 238);
+        background-color: var(--container-bg);
+        color: var(--cont2-color);
         box-shadow: 3px 3px 2px 1px 
                   rgba(239, 239, 245, 0.719),
                   inset 0 1em 3em rgb(250, 253, 253, 0.1);
@@ -466,7 +528,7 @@ footer p strong:hover{
     .fa-square-github,
     .fa-linkedin{
         font-size: 1.8rem;
-        color:rgb(252, 252, 252);
+        color:var(--white);
     }
 
     .fa-square-git{
@@ -492,7 +554,7 @@ footer p strong:hover{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: rgb(46, 53, 53);
+        background-color: var(--card-bg);
         width: 50%;
         text-align: center;
         transition: 0.3s;
@@ -500,7 +562,7 @@ footer p strong:hover{
     }
 
     #logo{
-        color:rgb(10, 220, 248);
+        color:var(--white);
         position: fixed;
         padding: 6px;
         margin-top: 25px;
@@ -509,7 +571,7 @@ footer p strong:hover{
         border-radius: 40%;
         border-style:groove ;
         top: 2px;
-        background: #778091;
+        background: var(--container-bg);
         text-shadow: rgb(48, 77, 87) 1px 0 10px;
         transition: all 0.2s ease-in-out 0.3s;
         z-index: 2;
@@ -539,7 +601,7 @@ footer p strong:hover{
     }
 
     .container2{
-        color: rgb(222, 247, 238);
+        color: var(--cont2-color);
         box-shadow: 3px 3px 2px 1px 
                 rgba(239, 239, 245, 0.719),
                 inset 0 1em 3em rgb(250, 253, 253, 0.1);
@@ -564,8 +626,8 @@ footer p strong:hover{
         flex-direction: column;
         margin: 1rem 1rem;
         gap: 1rem;
-        background-color: rgba(105, 115, 134, 0.4);
-        color: rgb(222, 247, 238);
+        background-color: var(--container-bg);
+        color: var(--cont2-color);
         box-shadow: 3px 3px 2px 1px 
                   rgba(239, 239, 245, 0.719),
                   inset 0 1em 3em rgb(250, 253, 253, 0.1);
@@ -576,7 +638,7 @@ footer p strong:hover{
     .project-write-up{
         height: auto;
         position: static;
-        background: #354461ab;
+        background: var(--card-bg);
         border-radius: 1rem;
         margin: 0;
         top: 10px;
@@ -595,13 +657,13 @@ footer p strong:hover{
 
     .project-content > div{
         height: auto;
-        background-color: rgba(151, 151, 236, 0.616);
+        background-color: var(--project-cont);
         border-radius: 1rem;
         padding: 2px 10px;
         font-size: 10px;
     }
     .project-content h3 em:hover{
-        color: rgb(7, 245, 102);
+        color: var(--a-color);
         text-decoration: underline;
         font-size: 0.9rem;
     }
@@ -632,8 +694,8 @@ footer p strong:hover{
     }
 
     footer{
-        background-color: rgb(29, 28, 28);
-        color:aliceblue;
+        background-color: var(--white);
+        color: var(--black);
         text-align: center;
         margin-bottom: 2rem;
         padding: 1rem;
@@ -641,5 +703,6 @@ footer p strong:hover{
 
     footer p{
         font-size: 0.9rem;
+        color: var(--black);
     }
 }

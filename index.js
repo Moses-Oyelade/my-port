@@ -2,6 +2,11 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+// const lightmode = document.querySelector(".lightmode");
+
+// lightmode.addEventListener('click', () => {
+//     lightmode.classList.toggle('active');
+// })
 
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");
@@ -28,3 +33,25 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// function to toogle Dark and Light Mode
+  const toggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '🌙 Dark Mode';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      toggleBtn.textContent = '🌙 Dark Mode';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      toggleBtn.textContent = '🌞 Light Mode';
+      localStorage.setItem('theme', 'light');
+    }
+  });
