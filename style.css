@@ -318,8 +318,7 @@ img {
 .hamburger{
     display: none;
     cursor:pointer;
-    margin-left: 40%;
-    margin-left: 5%;
+    margin-left: 25%;
 }
 
 .bar{
@@ -592,7 +591,7 @@ footer p strong:hover{
     background: var(--card-bg);
     border: 1px solid var(--accent-color);
     color: var(--text-color);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
