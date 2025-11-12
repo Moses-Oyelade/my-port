@@ -51,7 +51,7 @@ hiddenElements.forEach((el) => observer.observe(el));
       toggleBtn.textContent = '🌙 Dark Mode';
       localStorage.setItem('theme', 'dark');
     } else {
-      toggleBtn.textContent = '🌞 Light Mode';
+      toggleBtn.textContent = '🔆 Light Mode';
       localStorage.setItem('theme', 'light');
     }
   });
