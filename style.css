@@ -555,7 +555,7 @@ footer p strong:hover{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: var(--card-bg);
+        background-color: var(--bg-color);
         width: 50%;
         text-align: center;
         transition: 0.3s;
