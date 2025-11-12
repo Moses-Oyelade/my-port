@@ -520,7 +520,7 @@ footer p strong:hover{
         border-bottom: #9dbaf3;
         border-bottom-style: inset;
         flex: 65%;
-        padding: 10px 25px ;
+        padding: 0.5rem 1rem ;
     }
 
     .fa-contact button{
